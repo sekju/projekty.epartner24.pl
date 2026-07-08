@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droga do domu - projekty.epartner24.pl</title>
+    <meta name="description" content="Informacje o projekcie Droga do domu realizowanym w partnerstwie z EPARTNER.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/epartner.css">
+</head>
+<body data-theme="normal">
+    <div class="panel-toggles">
+        <button id="nav-panel-toggle" class="panel-toggle-btn left" aria-label="OtwĂłrz panel nawigacji"
+            aria-controls="nav-panel" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <span>Nawigacja</span>
+        </button>
+        <button id="a11y-panel-toggle" class="panel-toggle-btn right" aria-label="OtwĂłrz panel dostÄ™pnoĹ›ci"
+            aria-controls="a11y-panel" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-accessibility-icon lucide-accessibility" aria-hidden="true">
+                <circle cx="16" cy="4" r="1" />
+                <path d="m18 19 1-7-6 1" />
+                <path d="m5 8 3-3 5.5 3-2.36 3.5" />
+                <path d="M4.24 14.5a5 5 0 0 0 6.88 6" />
+                <path d="M13.76 17.5a5 5 0 0 0-6.88-6" />
+            </svg>
+            <span>DostÄ™pnoĹ›Ä‡</span>
+        </button>
+    </div>
+
+    <div id="nav-panel" class="side-panel left" role="dialog" aria-modal="true" aria-labelledby="nav-panel-title"
+        hidden>
+        <div class="panel-header">
+            <h3 id="nav-panel-title" tabindex="-1">Szybka nawigacja</h3>
+            <button class="close-panel-btn" aria-label="Zamknij panel nawigacji">&times;</button>
+        </div>
+        <ul id="nav-panel-list">
+        </ul>
+    </div>
+
+    <div id="a11y-panel" class="side-panel right" role="dialog" aria-modal="true" aria-labelledby="a11y-panel-title"
+        hidden>
+        <div class="panel-header">
+            <h3 id="a11y-panel-title" tabindex="-1">Panel DostÄ™pnoĹ›ci</h3>
+            <button class="close-panel-btn" aria-label="Zamknij panel dostÄ™pnoĹ›ci">&times;</button>
+        </div>
+        <div class="panel-content">
+            <div class="control-group">
+                <h4>Rozmiar czcionki</h4>
+                <div class="font-controls">
+                    <button id="font-decrease">A-</button>
+                    <span id="font-size-value">100%</span>
+                    <button id="font-increase">A+</button>
+                </div>
+            </div>
+            <div class="control-group">
+                <h4>Tryb wyĹ›wietlania</h4>
+                <div class="theme-controls">
+                    <button data-theme="normal" class="active">Normalny</button>
+                    <button data-theme="high-contrast">Kontrast</button>
+                    <button data-theme="monochrome">Monochromatyczny</button>
+                    <button data-theme="dark">Ciemny</button>
+                </div>
+            </div>
+            <div class="control-group">
+                <h4>Czytanie tekstu</h4>
+                <button id="reading-toggle" aria-pressed="false">WĹ‚Ä…cz czytanie</button>
+            </div>
+            <div class="control-group">
+                <button id="reset-settings">Resetuj ustawienia</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="keyboard-modal" class="modal-overlay" role="dialog" aria-modal="true"
+        aria-labelledby="keyboard-modal-title" hidden>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="keyboard-modal-title" tabindex="-1">Nawigacja klawiaturÄ… jest aktywna</h2>
+                <button class="close-modal-btn" aria-label="Zamknij okno">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>UĹĽyj klawisza <strong>Tab</strong>, aby przechodziÄ‡ do kolejnych elementĂłw lub <strong>Shift + Tab</strong>, aby siÄ™ cofaÄ‡.</p>
+                <p>Aby wĹ‚Ä…czyÄ‡ tryb czytania na gĹ‚os, otwĂłrz panel dostÄ™pnoĹ›ci i aktywuj opcjÄ™ "WĹ‚Ä…cz czytanie".</p>
+                <p>WciĹ›nij <strong>Escape</strong>, aby zamknÄ…Ä‡ to okno.</p>
+            </div>
+        </div>
+    </div>
+    <a class="skip-link" href="#main-content">PrzejdĹş do gĹ‚Ăłwnej treĹ›ci</a>
+    <header class="epartner-header">
+        <div class="container">
+            <div class="logos" role="img" aria-label="Logotypy: Fundusze Europejskie dla ĹšlÄ…skiego, Rzeczpospolita Polska, Unia Europejska, WojewĂłdztwo ĹšlÄ…skie">
+                <img src="media/images/kolory-pion-slaskie-rgb.png" alt="" aria-hidden="true">
+                <img src="media/images/kolory-pion-rzeczpospolita-polska-rgb.png" alt="" aria-hidden="true">
+                <img src="media/images/kolory-pion-unia-europejska-rgb.png" alt="" aria-hidden="true">
+                <img src="media/images/kolory-pion-wojewodztwo-slaskie.png" alt="" aria-hidden="true">
+            </div>
+            <a class="brand-link" href="https://epartner24.pl/" aria-label="epartner24.pl - strona gĹ‚Ăłwna">
+                <img class="epartner-wordmark" src="media/epartner-logo.png" alt="epartner">
+            </a>
+            <h1>Droga do domu</h1>
+            <h2 class="subtitle">#FunduszeUE</h2>
+        </div>
+    </header>
+
+    <nav aria-label="Nawigacja strony projektu">
+        <div class="container">
+            <ul>
+                <li><a href="#droga-do-domu">Droga do domu</a></li>
+                <li><a href="#documents-heading">Dokumenty</a></li>
+                <li><a href="pages/deklaracja-dostepnosci.html">Deklaracja dostÄ™pnoĹ›ci</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+<section id="droga-do-domu" aria-labelledby="droga-do-domu-heading">
+            <h2 id="droga-do-domu-heading">Droga do domu. Kompleksowe wsparcie osób w kryzysie bezdomności</h2>
+            <p>„Droga do domu. Kompleksowe wsparcie osób w kryzysie bezdomności” to projekt, którego głównym celem
+                jest poprawa sytuacji osób w kryzysie bezdomności, dotkniętych wykluczeniem z dostępu do mieszkań lub
+                zagrożonych bezdomnością poprzez rozwój i zwiększenie dostępności usług społecznych świadczonych w
+                środowisku lokalnym.</p>
+            <p>Działania projektu ukierunkowane są na zapewnienie kompleksowego, zindywidualizowanego wsparcia
+                odpowiadającego na różne etapy kryzysu bezdomności – od profilaktyki i interwencji, po stabilizację i
+                reintegrację społeczną.</p>
+            <h3>Cel projektu zostanie zrealizowany poprzez główne zadania projektowe:</h3>
+            <ul>
+                <li>Usługi o charakterze profilaktycznym oraz interwencyjno-aktywizującym, w tym:
+                    <ul>
+                        <li>wsparcie pracownika socjalnego,</li>
+                        <li>działania streetworkerów,</li>
+                        <li>wsparcie asystenta osoby w kryzysie bezdomności;</li>
+                    </ul>
+                </li>
+                <li>Funkcjonowanie punktu informacyjno-konsultacyjnego, obejmujące:
+                    <ul>
+                        <li>wsparcie doradców pierwszego kontaktu,</li>
+                        <li>poradnictwo specjalistyczne,</li>
+                        <li>działania grup samopomocowych,</li>
+                        <li>mobilne punkty pomocy przedmedycznej,</li>
+                        <li>działania wspierające integrację ze społecznością lokalną;</li>
+                    </ul>
+                </li>
+                <li>Utworzenie i funkcjonowanie mieszkań z usługami dla kobiet w kryzysie bezdomności lub zagrożonych
+                    bezdomnością (funkcja interwencyjna);</li>
+                <li>Funkcjonowanie mieszkań ze wsparciem w modelu „Housing First – Najpierw Mieszkanie”,
+                    umożliwiających stabilizację życiową i proces usamodzielniania;</li>
+                <li>Wzmocnienie kompetencji kadry, poprzez szkolenia (m.in. z dialogu motywacyjnego) oraz
+                    superwizję.</li>
+            </ul>
+            <p>Grupę docelową stanowi co najmniej 150 osób w kryzysie bezdomności lub zagrożonych bezdomnością (w tym
+                kobiety i mężczyźni) oraz 12 osób kadry świadczącej usługi społeczne, zamieszkujących lub
+                przebywających na terenie Katowic.</p>
+            <p>Realizacja projektu przyczyni się do: zwiększenia dostępu do usług społecznych, poprawy funkcjonowania
+                społecznego uczestników, wzmocnienia samodzielności i poczucia sprawczości, ograniczenia skali
+                zjawiska bezdomności, rozwoju usług zgodnych z ideą deinstytucjonalizacji.</p>
+            <p>Projekt odpowiada na realne potrzeby osób w kryzysie bezdomności, uwzględniając również specyficzną
+                sytuację kobiet oraz różnorodność ścieżek wychodzenia z kryzysu.</p>
+            <p>Projekt realizowany jest w okresie 01.04.2026 – 30.06.2029 na terenie miasta Katowice.</p>
+            <p>Projekt realizowany w partnerstwie z EPARTNER Kursy Językowe spółka z ograniczoną odpowiedzialnością.
+            </p>
+            <h3>Metadane projektu</h3>
+            <ul>
+                <li><strong>Okres realizacji:</strong> 01.04.2026 – 30.06.2029</li>
+                <li><strong>Miejsce realizacji:</strong> Katowice</li>
+                <li><strong>Partner:</strong> EPARTNER Kursy Językowe spółka z ograniczoną odpowiedzialnością</li>
+                <li><strong>Wartość projektu:</strong> 5 059 954,00 zł</li>
+                <li><strong>Dofinansowanie:</strong> 4 806 956,30 zł</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="kontakt" class="site-footer">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <address>
+                <strong>EPARTNER Kursy JÄ™zykowe spĂłĹ‚ka z ograniczonÄ… odpowiedzialnoĹ›ciÄ…</strong><br>
+                epartner24.pl
+            </address>
+            <p><a href="pages/deklaracja-dostepnosci.html">Deklaracja dostÄ™pnoĹ›ci</a></p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
