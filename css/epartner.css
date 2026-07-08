@@ -11,6 +11,13 @@
   --focus: #ffbf47;
 }
 
+body[data-theme="normal"] {
+  --primary-color: var(--brand);
+  --focus-outline: var(--brand-dark);
+  --focus-bg: var(--brand-dark);
+  --focus-text: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -210,6 +217,29 @@ body[data-theme="high-contrast"] .documents a {
   background: #000000;
   color: #ffffff;
   border-color: #ffff00;
+}
+
+.panel-toggle-btn {
+  width: 68px;
+  height: 68px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--brand);
+}
+
+.panel-toggle-btn svg {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+}
+
+.panel-toggle-btn:hover {
+  background: var(--brand-dark);
+}
+
+.panel-toggle-btn span {
+  display: none;
 }
 
 @media (max-width: 760px) {
