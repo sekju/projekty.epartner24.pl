@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const navPanelList = document.getElementById('nav-panel-list');
     if (!navPanelList) return;
 

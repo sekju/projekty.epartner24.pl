@@ -1,4 +1,4 @@
-﻿# projekty.epartner24.pl
+# projekty.epartner24.pl
 
 Statyczna strona projektu "Droga do domu" dla domeny projekty.epartner24.pl.
 
