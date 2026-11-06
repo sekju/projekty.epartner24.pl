@@ -55,6 +55,23 @@ body[data-theme="dark"] .panel-toggle-btn {
     color: #000;
 }
 
+/* POPRAWKA 2026-11: czytelne menu i linki w trybie ciemnym (kontrast min. 4.5:1) */
+body[data-theme="dark"] nav {
+    background-color: #2b1f40;
+}
+body[data-theme="dark"] nav a {
+    color: #ffffff;
+}
+body[data-theme="dark"] a {
+    color: #8ab4f8;
+}
+body[data-theme="dark"] a:hover {
+    color: #c3d9fc;
+}
+body[data-theme="dark"] .skip-link {
+    color: #000;
+}
+
 /* POPRAWKA: Kolory panelu dostępności w trybie ciemnym */
 body[data-theme="dark"] .panel-content,
 body[data-theme="dark"] .panel-content h4,
